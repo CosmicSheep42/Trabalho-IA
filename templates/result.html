@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Resultado da Classificação</title>
+  </head>
+  <body>
+    <h1>Resultado</h1>
+    {% if error %}
+      <p style="color:red">{{ error }}</p>
+    {% else %}
+      <p><strong>Predição:</strong> {{ prediction }}</p>
+      {% if confidence %}
+        <p><strong>Confiança:</strong> {{ '%.2f'|format(confidence) }}%</p>
+      {% endif %}
+      {% if filename %}
+        <img src="/uploads/{{ filename }}" alt="Uploaded Image" style="max-width:400px">
+      {% endif %}
+    {% endif %}
+    <p><a href="/">Classificar outra imagem</a></p>
+  </body>
+</html>

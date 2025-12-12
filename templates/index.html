@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Classificador Simpsons</title>
+  </head>
+  <body>
+    <h1>Enviar imagem do personagem</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit">Enviar e Classificar</button>
+    </form>
+    <p>O classificador usa o ensemble treinado em `resultados` com features VGG16.</p>
+  </body>
+</html>
