@@ -22,7 +22,7 @@ O sistema é construído em Python e utiliza as seguintes ferramentas e técnica
 
 O modelo final de **Ensemble** (utilizando as Deep Features da VGG16) atingiu a acurácia máxima de **74.63%** no conjunto de teste fixo, superando o desempenho de todos os classificadores individuais.
 
-## 🚀 Como Executar
+## Como Executar
 
 1.  **Treinamento e Avaliação:**
     * O script `main.py` executa todo o fluxo de trabalho (extração de features, CV, treino, teste fixo e Ensemble).
@@ -38,3 +38,4 @@ O modelo final de **Ensemble** (utilizando as Deep Features da VGG16) atingiu a 
 * `tools/`: Contém as funções de `data_loader`, `feature_extractor`, `classifier_model` e `results_handler`.
 * `resultados/`: Pasta criada durante a execução do main.py, irá conter o `relatorio_desempenho.md`, as matrizes de confusão (`.png`) e os modelos salvos (`simpsons_ensemble_model.pkl` e `simpsons_scaler.pkl`).
 * `data/`: Pasta de entrada com as subpastas dos personagens (dataset).
+
