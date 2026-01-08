@@ -7,3 +7,4 @@ Pillow
 tensorflow
 joblib
 flask
+seaborn
